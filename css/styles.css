@@ -1,0 +1,109 @@
+html {
+  font-size: 10px;
+  font-family: "DM Mono"
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  /*background-color: #e8d79f;*/
+}
+
+.animation-container {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.announcement {
+  margin: -28% 50%;
+  width: 50%
+}
+
+.bouncy-text {
+animation: text-shadow 1.5s ease-in-out infinite;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.bouncy-text:hover {
+    animation-play-state: paused;
+}
+
+a {
+    color: #024794;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+@keyframes text-shadow {
+    0% {
+        transform: translateX(0);
+        text-shadow:
+            0 0 0 #0c2ffb,
+            0 0 0 #2cfcfd,
+            0 0 0 #fb203b,
+            0 0 0 #fefc4b;
+    }
+
+    20% {
+        transform: translateX(-1em);
+        text-shadow:
+            0.125em 0 0 #0c2ffb,
+            0.25em 0 0 #2cfcfd,
+            -0.125em 0 0 #fb203b,
+            -0.25em 0 0 #fefc4b;
+    }
+
+    40% {
+        transform: translateX(0.5em);
+        text-shadow:
+            -0.0625em 0 0 #0c2ffb,
+            -0.125em 0 0 #2cfcfd,
+            0.0625em 0 0 #fb203b,
+            0.125em 0 0 #fefc4b;
+    }
+
+   60% {
+        transform: translateX(-0.25em);
+        text-shadow:
+            0.03125em 0 0 #0c2ffb,
+            0.0625em 0 0 #2cfcfd,
+            -0.03125em 0 0 #fb203b,
+            -0.0625em 0 0 #fefc4b;
+    }
+
+    80% {
+        transform: translateX(0);
+        text-shadow:
+            0 0 0 #0c2ffb,
+            0 0 0 #2cfcfd,
+            0 0 0 #fb203b,
+            0 0 0 #fefc4b;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation: none !important;
+      transition: none !important;
+    }
+}
+
+@media screen and (max-width: 700px ) {
+  .announcement {
+    margin: -43% 50%;
+    width: 50%
+  }
+}
+
+@media screen and (max-width: 500px ) {
+  .announcement {
+    margin: -10% 30%;
+    width: 100%
+  }
+}
