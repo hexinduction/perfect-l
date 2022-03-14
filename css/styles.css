@@ -12,6 +12,14 @@ body {
   /*background-color: #e8d79f;*/
 }
 
+#Vert {
+  animation: split-text-vert .8s ease-in;
+}
+
+#Hz {
+  animation: split-text-hz .8s ease-in;
+}
+
 .animation-container {
   margin: 0 auto;
   width: 50%;
@@ -38,6 +46,24 @@ a {
 
 a:hover {
     text-decoration: none;
+}
+
+@keyframes split-text-hz {
+  0% {
+    transform: translateY(-7.2em);
+  }
+  90% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes split-text-vert {
+  0% {
+    transform: translateY(7.2em);
+  }
+  90% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes text-shadow {
